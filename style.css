@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+
+/* CSS reset end */
+
+.attribution { font-size: 11px; text-align: center; padding:30px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+}
+
+.main{
+    display:flex;
+    width: 800px;
+    justify-content: center;
+}
+
+.result{
+    /* width: 50%; */
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    color:hsl(0, 0%, 100%);
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.result h3{
+    font-size: 28px;
+}
+
+.circle h2{
+    font-size: 68px;
+    margin: 38px 0px 0px 0px;
+}
+
+.result .great{
+    font-size: 38px;
+}
+
+.result p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 45px 10px;
+    line-height: 1.4rem;
+}
+
+.circle p{
+    font-size: 18px;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background: linear-gradient(to top ,hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1));
+    border-radius:50%;
+}
+.summary{
+    /* width: 50%; */
+    width: 400px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+    padding: 35px;
+    box-shadow: 10px 10px 10px hsl(240, 30%, 89%);
+}
+.summary h3{
+    font-size: 25px;
+    text-align: left;
+    padding: 25px;
+}
+
+.category{
+    display:flex;
+}
+
+.category h4{
+    padding: 0px 0px 0px 10px;
+}
+
+.item0, .item1, .item2, .item3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 0px 0px 20px;
+}
+
+.item0 { color: hsl(0, 100%, 67%); background: hsl(0, 100%, 67%, 0.1); }
+.item1 { color: hsl(39, 100%, 56%); background: hsl(39, 100%, 56%, 0.1); }
+.item2 { color: hsl(166, 100%, 37%); background: hsl(166, 100%, 37%, 0.1); }
+.item3 { color: hsl(234, 85%, 45%); background: hsl(234, 85%, 45%, 0.1); }
+
+.score{
+    color:black;
+}
+
+.btn{
+    color: white;
+    background: hsl(224, 30%, 27%);
+    border-radius:35px;
+    padding: 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    color: white;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius:35px;
+    padding: 15px;
+    cursor:pointer;
+}
+
+@media (max-width: 376px){
+    .main{
+        width: 100%;
+        flex-direction: column;
+    }
+    .result, .summary{
+        width: 100%;
+    }
+    .summary{
+        border-radius: 0px;
+        padding: 15px;
+        box-shadow: none;
+    }
+    .result{
+        height: 380px;
+        padding: 20px;
+
+    }
+    .result h3{
+    font-size: 25px;
+    }
+
+    .circle h2{
+        font-size: 58px;
+    }
+
+    .result .great{
+        font-size: 28px;
+    }
+
+    .result p{
+        font-size: 15px;
+    }
+
+    .circle p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
